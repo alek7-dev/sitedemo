@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.menu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e6f4ff;
+    color: #0077cc;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-acessar {
+    padding: 12px 30px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.scroll-more {
+    color: #0077cc;
+    font-size: 14px;
+}
+
+.hero-image {
+    position: relative;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p.subtitulo {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 300px));
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.2s;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    background: #4db8ff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.planos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.preco.azul {
+    color: #008cff;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    text-align: left;
+    color: #555;
+}
+
+.card ul li {
+    margin: 8px 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #4db8ff;
+    background: transparent;
+    color: #4db8ff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.preenchido {
+    background: #4db8ff;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.team {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.team h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.team .subtitle {
+    color: #6c7a89;
+    margin: 10px 0 40px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.team-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    text-align: left;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-card.big {
+    grid-row: span 2;
+    position: relative;
+}
+
+.team-card.big img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card.big .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: #fff;
+}
+
+.team-card.big h3 {
+    margin-bottom: 5px;
+}
+
+.team-card.big span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-card .info {
+    padding: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.team-card span {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #6c7a89;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #6c7a89;
+}
+
+.quote {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 35px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quote strong {
+    font-weight: 700;
+}
+
+.footer {
+    background-color: #1e1f23;
+    color: #fff;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h3.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #363940;
+    margin-top:6%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.social-icons a {
+    margin-left: 12px;
+}
+
+.social-icons img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
