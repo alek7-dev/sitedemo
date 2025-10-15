@@ -28,6 +28,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    font-weight: bold;
 }
 
 .hero {
@@ -190,13 +191,10 @@ p.subtitulo {
     transition: 0.3s;
 }
 
-.btn.preenchido {
-    background: #4db8ff;
-    color: #fff;
-}
-
 .btn:hover {
     opacity: 0.8;
+    background: #4db8ff;
+    color: white;
 }
 
 .team {
